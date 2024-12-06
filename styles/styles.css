@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red-color: #B4436D;
+    --blue-color: #4036A9;
+    --grey-color: #CDD5E0;
+    --black-color: #111729;
+
+}
+
+body {
+    font-family: 'Be Vietnam Pro', Arial;
+    height: 1300px;
+    /* background-image: linear-gradient(to bottom right, var(--red-color), var(--blue-color)); */
+    background-image: url('../images/background@3x.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+nav .logo {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.hero .hero-top, .hero .hero-sub {
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.hero .hero-top {
+    margin-top: 30px;
+    max-width: 600px;
+
+}
+
+.hero .hero-sub {
+    margin-top: 20px;
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+.forms-section .container {
+    margin-top: 80px;
+}
+
+.forms-section .form-container {
+    padding: 20px;
+    border-radius: 25px;
+    margin: 0 auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blurry glass effect */
+}
+
+ /* Individual form group */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+  /* Label styling */
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 0.875rem;
+    color: #ffffff;
+}
+
+.form-group input[type=text], select, .form-group textarea, .contact-btn {
+    padding: 22px;
+    border-radius: 14px;
+    font-family: 'Be Vietnam Pro', Arial;
+
+}
+
+  /* Input styling */
+.form-group input[type=text], select {
+    border: 1px solid #ffffff;
+    width: 370px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--black-color);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+
+
+.form-group select {
+    appearance: none; /* Removes default arrow (standard browsers) */
+    -webkit-appearance: none; /* Removes default arrow (Safari/Chrome) */
+    -moz-appearance: none; /* Removes default arrow (Firefox) */
+    background: white url('../images/Expand_down.svg') no-repeat right 18px center;
+    background-size: 20px; /* Size of the custom arrow */
+    cursor: pointer;
+}
+
+.form-group input::placeholder {
+    color: var(--black-color);
+}
+
+.form-group textarea {
+    resize: none;
+    border: 1px solid #ffffff;
+    height: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black-color);
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #007BFF;
+}
+
+.twin-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-btn {
+    border: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: white;
+    cursor: pointer;
+    color: var(--blue-color);
+    border-radius: 14px;
+    width: 100%;
+}
+
+
+
+
+/* Utility Classes */
+.container {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Text Classes */
+.text-xl {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.text-l {
+    font-size: 2rem;
+}
+
+.text-label {
+    font-size: 0.875rem;
+}
+
+/* media queries */
+@media (max-width: 830px) {
+    
+    .form-group input[type=text], select {
+        width: 100%;
+    }
+    .twin-group {
+        flex-direction: column;
+    }
+
+    .text-xl {
+        font-size: 3.5rem;
+    }
+    .text-l {
+        font-size: 1.5rem;
+    }
+}

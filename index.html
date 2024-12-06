@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Contact Page</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/Logo.svg" alt="companylogo">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-top text-xl">
+                Interested in our business pricing?
+            </div>
+            <div class="hero-sub text-l">
+                Fill out the form to view details and we’ll contact you as soon as possible.
+            </div>
+        </div>
+    </section>
+
+    <!-- Forms -->
+    <section class="forms-section">
+        <div class="container">
+            <div class="form-container">
+                <form action="#">
+                    <div class="twin-group">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Ethan Johnson" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Company Email</label>
+                            <input type="text" id="email" placeholder="ethan@johnson.com" required>
+                        </div>
+                    </div>
+                   
+                <div class="twin-group">
+                    <div class="form-group">
+                        <label for="companysize">Company Size</label>
+                        <select name="company size" id="companysize">
+                            <option value="50100">50-100 employees</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="companysize">Company Size</label>
+                        <select name="company size" id="companysize">
+                            <option value="50100">50-100 employees</option>
+                        </select>
+                    </div>
+                </div>
+                    <div class="form-group">
+                        <label for="message">
+                            Message
+                        </label>
+                        <textarea name="employees" id="emp">50-100 employees</textarea>
+                    </div>
+                    <button type="submit" class="contact-btn">Contact Sales</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
